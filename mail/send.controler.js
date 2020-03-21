@@ -24,12 +24,12 @@ function send(req, res, next) {
 } 
 
 // Services
-
+// benoit.conti@eurotasc.com
 async function sendMail(data){
     transporter.sendMail({
         from: data.firstName + ' ' + data.lastName + ' <' + data.email + '>',
-        to: 'd.l@justduck.co',
-        subject: data.topic,
+        to: 'i.kramnyuk@gmail.com',
+        subject: "Message from TASK website: " + data.topic,
         text: data.message
     });
     
