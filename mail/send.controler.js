@@ -29,7 +29,7 @@ async function sendMail(data){
     transporter.sendMail({
         from: data.firstName + ' ' + data.lastName + ' <' + data.email + '>',
         to: 'i.kramnyuk@gmail.com',
-        subject: "Message from TASK website: " + data.topic,
+        subject: "Message from TASC website: " + data.topic,
         text: data.message
     });
     
