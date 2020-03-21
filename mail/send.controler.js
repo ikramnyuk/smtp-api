@@ -30,7 +30,7 @@ async function sendMail(data){
         from: data.firstName + ' ' + data.lastName + ' <' + data.email + '>',
         to: 'i.kramnyuk@gmail.com',
         subject: "Message from TASC website: " + data.topic,
-        text: data.message
+        text: 'From: ' + data.firstName + ' ' + data.lastName + ' <' + data.email + '> ' + '\n' + data.message
     });
     
     console.log('sended mail');
