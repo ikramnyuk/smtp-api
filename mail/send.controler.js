@@ -28,7 +28,7 @@ function send(req, res, next) {
 async function sendMail(data){
     transporter.sendMail({
         from: data.firstName + ' ' + data.lastName + ' <' + data.email + '>',
-        to: 'i.kramnyuk@gmail.com',
+        to: 'benoit.conti@eurotasc.com',
         subject: "Message from TASC website: " + data.topic,
         text: 'From: ' + data.firstName + ' ' + data.lastName + ' <' + data.email + '> ' + '\n' + data.message
     });
